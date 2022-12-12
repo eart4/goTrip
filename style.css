@@ -280,6 +280,7 @@ a{
 .slider {
 	position: relative;
 	height: 456px;
+   
 }
 
 .slider .center .slider__item {
@@ -301,4 +302,252 @@ a{
 	transition: 0.2s ease-in;
 }
 
+.slider__btn{
+    
+
+    cursor: pointer;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    padding-left: 26px;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%), #8B8B8B;
+}
+
+.slider__btn--prev {
+    position: absolute;
+    padding-left: 26px;
+    justify-content: flex-start;
+    left: -27px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.slider__btn--next {
+    position: absolute;
+    padding-right: 26px;
+    justify-content: flex-end;
+    padding-left: 26px;
+    justify-content: flex-start;
+    right: -27px;
+    top: 50%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.btn a{
+    color: white;
+}
+
+
+
+
+
+.customers {
+    padding: 100px 0 133px;
+}
+
+.customers__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+}
+.customers__img {
+    max-width: 478px;
+}
+.customers__img img{
+    border-radius: 60px;
+}
+.customers__content {
+}
+.customers__title {
+    margin-bottom: 35px;
+    font-size: 45px;
+    font-weight: 500;
+    width: 565px;
+}
+
+.review{
+    max-width: 490px;
+}
+
+.review__client {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    column-gap: 33px;
+}
+.review__client-avatar {
+    overflow: hidden;
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    background-color: #ff794e;
+}
+
+.review__client-desc-name {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.review__client-desc-country {
+    font-size: 25px;
+    color: var(--secondary);
+}
+.review__text {
+    margin-bottom: 30px;
+    color: var(--secondary);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.cta {
+    margin-top: 100px;
+    margin-bottom: 135px;
+}
+
+.cta__plate::before,
+.cta__plate::after{
+    content: '';
+    position: absolute;
+    width: 63px;
+    height: 83px;
+}
+
+.cta__plate::before{
+    left: 74px;
+    bottom: 56px;
+    background-image: url('./images/cta-el-01.svg');
+}
+
+.cta__plate::after{
+    top: 74px;
+    right: 80px;
+    background-image: url('./images/cta-el-02.svg');
+}
+
+.cta__plate {
+    position: relative;
+    background-color: #fff;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 580px;
+    padding: 40px 15px;
+}
+.cta__title {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 596px;
+    justify-content: center;
+}
+.cta__text {
+    margin-bottom: 60px;
+    font-size: 30px;
+    color: var(--secondary);
+}
+.cta__btn {
+    margin-top: 0;
+}
+
+.subscribe__title {
+    font-weight: 600;
+    font-size: 55px;
+    max-width: 494px;
+    margin-bottom: 60px;
+}
+
+.subscribe {
+    margin-bottom: 50px;
+}
+
+.subcribe__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-form {
+    padding: 12px 15px 12px 46px;
+    background-color: #fff;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    
+}
+.subscribe-form__input{
+    outline: none;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.subscribe-form__input::placeholder{
+    color: var(--secondary);
+}
+
+
+
+.subcribe-form__btn  {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 24px 65px;
+    background: linear-gradient(129.54deg, #FF7B4E 15.57%, #FF584E 95.03%);
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.subcribe-form__btn:hover{
+    color: rgb(245, 233, 127);
+    transition: color 0.2s ease-in;
+}
+
+.subcribe-form__btn:active{
+    position: relative;
+    top: 1px;
+}
+
+.footer{
+    padding-top: 56px;
+    padding-bottom: 74px;
+}
+
+.footer a{
+    color:rgba(131, 139, 137, 1);
+}
+
+
+
+.logo--footer a{
+    color: #FF7C4E;
+}
+
+.nav__list.nav__list--footer a.active::after,
+.nav__list.nav__list--footer a:hover::after{
+    display: none;
+}
+
+.nav__list.nav__list--footer a.active,
+.nav__list.nav__list--footer a:hover{
+    color: var(--orange);
+}
+
+.login__btn--footer {
+    color: #fff !important;
+}
+
+.login__btn--footer:hover{
+    color: rgb(245, 233, 127) !important;
+}
 
